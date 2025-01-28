@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restora</title>
+</head>
+<body>
+    <h2>All Listings</h2>
+    <uL>
+        <% for(let listing for allListings) { %>
+            <li>
+                <h3><%= listing.name %></h3>
+                <p>Rating: <%= listing.rating %></p>
+                <p>Price: $<%= listing.price %></p>
+                <p>Description: <%= listing.description %></p>
+            </li>
+        <% } %>
+    </uL>
+</body>
+</html>   
