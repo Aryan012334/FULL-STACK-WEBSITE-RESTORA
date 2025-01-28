@@ -39,27 +39,28 @@ const listingSchema = new Schema({
         type: String,
         default: "No description provided",
     },
+    // image: {
+    //     type: {
+    //         filename: {
+    //             type: String,
+    //             default: "default-image",
+    //         },
+    //         url: {
+    //             type: String,
+    //             required: [true, 'Image URL is required'],
+    //             default: "https://unsplash.com/photos/brown-wooden-house-near-green-trees-during-daytime-YIMXYjQoBBU",
+                
+    //         },
+    //     },
+    //     default: () => ({
+    //         filename: "default-image",
+    //         url: "https://unsplash.com/photos/brown-wooden-house-near-green-trees-during-daytime-YIMXYjQoBBU",
+    //     }),
+    // },
     image: {
-        type: {
-            filename: {
-                type: String,
-                default: "default-image",
-            },
-            url: {
-                type: String,
-                required: [true, 'Image URL is required'],
-                default: "https://unsplash.com/photos/brown-wooden-house-near-green-trees-during-daytime-YIMXYjQoBBU",
-                match: [
-                    /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&\/=]*)/,
-                    'Invalid URL format for image',
-                ],
-            },
-        },
-        default: () => ({
-            filename: "default-image",
-            url: "https://unsplash.com/photos/brown-wooden-house-near-green-trees-during-daytime-YIMXYjQoBBU",
-        }),
-    },
+        url:String,
+        filename : String,
+     },
     price: {
         type: Number,
         required: [true, 'Price is required'],

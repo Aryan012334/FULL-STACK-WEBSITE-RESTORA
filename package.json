@@ -6,5 +6,24 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
-  }
+  },
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "name": "major-project",
+  "version": "1.0.0",
+  "description": "Full stack website implementation Using MERN stack",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aryan012334/FULL-STACK-WEBSITE-RESTORA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Aryan012334/FULL-STACK-WEBSITE-RESTORA/issues"
+  },
+  "homepage": "https://github.com/Aryan012334/FULL-STACK-WEBSITE-RESTORA#readme"
 }

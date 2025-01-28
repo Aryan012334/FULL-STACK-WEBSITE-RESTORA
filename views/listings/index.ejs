@@ -7,8 +7,14 @@
 </head>
 <body>
     <h2>All Listings</h2>
+    <form method=" get" action="/listings/new">
+        <button>Create new Listings</button>
+    </form>
     <uL>
-        <% for(let listing for allListings) { %>
+        <% for(let listing of allListings) { %>
+            <li><a href= "/listings/<%= listing._id %>"> <%= listing.title %></a></li>
+
+
             <li>
                 <h3><%= listing.name %></h3>
                 <p>Rating: <%= listing.rating %></p>
@@ -18,4 +24,4 @@
         <% } %>
     </uL>
 </body>
-</html>   
+</html>    
