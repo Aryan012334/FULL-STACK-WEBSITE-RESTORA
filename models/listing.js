@@ -58,9 +58,16 @@ const listingSchema = new Schema({
     //     }),
     // },
     image: {
-        url:String,
-        filename : String,
-     },
+        url: {
+            type: String,
+            required: [true, 'Image URL is required'],
+            default: "https://unsplash.com/photos/brown-wooden-house-near-green-trees-during-daytime-YIMXYjQoBBU",
+        },
+        filename: {
+            type: String,
+            default: "default-image",
+        },
+    },
     price: {
         type: Number,
         required: [true, 'Price is required'],

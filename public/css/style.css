@@ -1,0 +1,78 @@
+/* body{
+    background-color: aqua;
+} */
+
+.navbar{
+    background-color: #fe424d;
+    /* background-color: white; */
+    height: 5rem;
+}
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    color: #222222 !important;   
+    /* imp if  we want to our custom styling to overpower the bootstrap styling */
+}
+/* footer */
+f-info-links a{
+    color: #222222 !important;
+    text-decoration: none;
+}
+f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info-links{
+    width: 100%;
+    vertical-align: middle;
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-info-socials,.f-info-brand{
+    vertical-align: middle;
+  
+    width: 100%;
+    margin-right: 0.7rem;
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-info{
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly center;
+
+}
+.f-info-socials i{
+  
+    font-size: 1.2rems;
+   
+    margin-right: 1rem;
+}
+
+
+/* cards */
+.card{
+    border:none !important;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body{
+    padding: 0 !important;
+}
+.card-text p{
+    font-weight: 400  ;
+}

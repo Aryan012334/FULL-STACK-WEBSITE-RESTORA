@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rerstora</title>
-</head>
+<% layout("layouts/boilerplate") %>
 <body>
     <h3>Listing Details : </h3>
     <uL>
@@ -15,5 +9,9 @@
         <li><%= listing.country %></li>
 
     </uL>
+    <br>
+    <a href="/listings/<%= listing._id %>/edit">Edit this Listings</a>
+    <form method="post" action="/listings/<%= listing._id%>?_method=delete">
+        <button>Delete this listing</button>
+    </form>
 </body>
-</html>
