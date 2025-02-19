@@ -54,7 +54,7 @@ app.get('/', (req, res) =>{
 //     }
 // });
 
-//Index route
+//Index route--- 
 app.get("/listings", async (req, res) => {
     // Listing.find({}).then((req,res) =>{
     //     console.log(res);
