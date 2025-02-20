@@ -52,9 +52,8 @@ app.get('/', (req, res) =>{
 //         console.error("Error saving listing: ", err);
 //         res.status(500).send('Failed to save listing');
 //     }
-// });
-
-//Index route--- 
+// });sffds
+//Index route---  
 app.get("/listings", async (req, res) => {
     // Listing.find({}).then((req,res) =>{
     //     console.log(res);
