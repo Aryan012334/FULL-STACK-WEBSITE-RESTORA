@@ -86,3 +86,7 @@ const listingSchema = new Schema({
 // Create and export the model
 const Listing = mongoose.model('Listing', listingSchema);
 module.exports = Listing;
+
+
+
+
