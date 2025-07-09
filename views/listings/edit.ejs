@@ -6,6 +6,7 @@
  <div class="row mt-3">
      <div class="col-8 offset-2">
 
+        <!-- //to have the lsiting totle we need listing also so we send the listing object while rendering the form -->
    
  <h3> Edit your Listing</h3>
     <form method="POST" action="/listings/<%= listing._id %>?_method=PUT" 
@@ -13,9 +14,10 @@
         enctype="multipart/form-data">
         <div>
             <label for="title" class="form-label">Title</label>
-        <input name="listing[title]"
-        value="<%=listing.title %>"
-        type="text"
+        <input name="listing[title]"     
+        value="<%=listing.title %>"      
+        
+        type="text"  
         class="form-control"
         required>
         <div class="valid-feedback">Title looks good!</div>

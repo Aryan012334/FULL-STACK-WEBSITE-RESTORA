@@ -126,6 +126,7 @@ app.get("/listings/:id/edit", async (req, res) => {
     //     console.error("Error fetching listing: ", err);
     //     res.status(404).send('Listing not found');
     // }
+    let listings=
 });
 
 //update route
@@ -134,6 +135,7 @@ app.put("/listings/:id", async (req, res) =>{
    
     // let updatedListing = await Listing.findByIdAndUpdate(id, req.body.listing, {new: true});   //deconstruct req.body.listing, and then pass it in new updated value
     await Listing.findByIdAndUpdate(id, {...req.body.listing});
+    //we descontruct all the parameters in lsiting and directly upadate it in the db
     res.redirect(`/listings/${id}`);
     // try {
     //     let updatedListing = await Listing.findByIdAndUpdate(req.params.id, req.body.listing, {new: true});
